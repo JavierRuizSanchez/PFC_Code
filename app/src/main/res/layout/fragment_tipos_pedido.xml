@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TiposPedido">
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/btn_mispedidos_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        app:strokeColor="#0000FF"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="250dp"
+        android:text="Ver Pedidos de Restaurante"
+        android:textColor="#3333FF"
+        android:textSize="15dp"
+        android:padding="14dp" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/btn_mispedidos_tienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        app:strokeColor="#0000FF"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="380dp"
+        android:textSize="15dp"
+        android:text="Ver Pedidos de Tienda"
+        android:textColor="#3333FF"
+        android:padding="14dp" />
+
+</FrameLayout>

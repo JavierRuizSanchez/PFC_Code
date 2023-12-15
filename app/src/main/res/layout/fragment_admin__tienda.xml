@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_Tienda">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Columna Izquierda -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Añadir Producto"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirconjuntochandal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Conjunto chandal" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirzapatillas"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="zapatillas" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirvestidonegro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Vestido negro" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirpolohombrerayas"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Polo manga larga" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirpoloemilio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Polo Emilio" />
+
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirpolodustin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Polo Dustin" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirlacoste"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Pulsera Lacoste" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirgabardina"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Gabardina" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadirpendientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Pendientes" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/añadircamisamujer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Camisa mujer" />
+
+
+            </LinearLayout>
+
+            <!-- Columna Derecha -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar Producto"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarchandal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Conjunto chandal" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarzapatillas"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="zapatillas" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarvestido"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Vestido negro" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarpolomangalarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Polo manga larga" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarpoloemilio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Polo Emilio" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarpolodustin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Polo Dustin" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarlacoste"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Pulsera Lacoste" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminargabardina"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Gabardina" />
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/eliminarpendientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Pendientes" />
+
+                <Button
+                    android:id="@+id/eliminarcamisamujer"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Camisa mujer"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:strokeColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="#0000FF"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        android:id="@+id/verTiend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="Ver Tienda" />
+</RelativeLayout>

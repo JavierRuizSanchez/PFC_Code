@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona producto"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+        android:id="@+id/ProductosCarta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="8dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/NombrePedidoCarta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:inputType="textCapWords"
+        android:maxLines="1" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/AñadirLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/black"
+        android:text="Añadir a Pedido"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/HacerPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        app:strokeColor="#33FF66"
+        android:text="Hacer Pedido"
+        android:layout_marginTop="20dp"
+        android:textColor="#33FF66" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/MisPedidosIrPed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        app:strokeColor="#3333FF"
+        android:text="Mis Pedidos"
+        android:layout_marginTop="20dp"
+        android:textColor="#3333FF" />
+
+</LinearLayout>

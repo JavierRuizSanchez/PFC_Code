@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TallaProducto">
+
+    <Button
+        android:id="@+id/btnMenuTallaTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="300dp"
+        android:layout_gravity="end|top"/>
+
+    <TextView
+        android:id="@+id/textAvisoProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la talla de tu prenda"
+        android:layout_marginTop="200dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        style="@style/AvisoText"/>
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/tallasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImage"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <ToggleButton
+            android:id="@+id/tallaS"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textOff="S"
+            android:textOn="S"
+            style="@style/MyToggleButtonStyle"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/my_toggle_button_background"/>
+
+        <ToggleButton
+            app:cornerRadius="10dp"
+            app:strokeColor="#0000FF"
+            android:id="@+id/tallaM"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textOff="M"
+            android:textOn="M"
+            style="@style/MyToggleButtonStyle"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/my_toggle_button_background"/>
+
+        <ToggleButton
+            style="@style/MyToggleButtonStyle"
+            app:cornerRadius="10dp"
+            app:strokeColor="#0000FF"
+            android:id="@+id/tallaL"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textOff="L"
+            android:textOn="L"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/my_toggle_button_background"/>
+
+        <ToggleButton
+            style="@style/MyToggleButtonStyle"
+            app:cornerRadius="10dp"
+            app:strokeColor="#0000FF"
+            android:id="@+id/tallaXL"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="XL"
+            android:textOff="XL"
+            android:textOn="XL"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/my_toggle_button_background"/>
+    </LinearLayout>
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/AñadirCesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/black"
+        android:text="Añadir a cesta"
+        android:layout_marginTop="560dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+

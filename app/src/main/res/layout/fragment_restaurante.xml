@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/rest_ubi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camilo Jose Cela 3, 28232, Las Rozas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/tagliatela"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/rest_carta"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Carta"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#3333FF"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/rest_hacer_reserva"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hacer Reserva"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#3333FF"
+        android:background="@drawable/rounded_button" />
+
+</LinearLayout>

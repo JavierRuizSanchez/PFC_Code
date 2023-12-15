@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/pantallaInicio">
+
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.utad.tfg.PantallaInicio"
+        android:label="fragment_pantalla_inicio"
+        tools:layout="@layout/fragment_pantalla_inicio" >
+        <action
+            android:id="@+id/action_pantallaInicio_to_iniciarSesion"
+            app:destination="@id/iniciarSesion" />
+        <action
+            android:id="@+id/action_pantallaInicio_to_crearCuenta"
+            app:destination="@id/crearCuenta" />
+    </fragment>
+    <fragment
+        android:id="@+id/iniciarSesion"
+        android:name="com.utad.tfg.IniciarSesion"
+        android:label="fragment_iniciar_sesion"
+        tools:layout="@layout/fragment_iniciar_sesion" >
+        <action
+            android:id="@+id/action_iniciarSesion_to_establecimientos"
+            app:destination="@id/establecimientos"
+            app:popUpTo="@id/iniciarSesion" />
+        <action
+            android:id="@+id/action_iniciarSesion_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearCuenta"
+        android:name="com.utad.tfg.CrearCuenta"
+        android:label="fragment_crear_cuenta"
+        tools:layout="@layout/fragment_crear_cuenta" >
+        <action
+            android:id="@+id/action_crearCuenta_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/establecimientos"
+        android:name="com.utad.tfg.Establecimientos"
+        android:label="fragment_establecimientos"
+        tools:layout="@layout/fragment_establecimientos" >
+        <action
+            android:id="@+id/action_establecimientos_to_menu_app"
+            app:destination="@id/menu_app" />
+        <action
+            android:id="@+id/action_establecimientos_to_restaurante"
+            app:destination="@id/restaurante" />
+        <action
+            android:id="@+id/action_establecimientos_to_tienda"
+            app:destination="@id/tienda" />
+        <action
+            android:id="@+id/action_establecimientos_to_peluqueria"
+            app:destination="@id/peluqueria" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_app"
+        android:name="com.utad.tfg.menu_app"
+        android:label="fragment_menu_app"
+        tools:layout="@layout/fragment_menu_app" >
+        <action
+            android:id="@+id/action_menu_app_to_perfil_usuario"
+            app:destination="@id/perfil_usuario" />
+        <action
+            android:id="@+id/action_menu_app_to_tiposPedido"
+            app:destination="@id/tiposPedido" />
+        <action
+            android:id="@+id/action_menu_app_to_tiposReserva"
+            app:destination="@id/tiposReserva" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfil_usuario"
+        android:name="com.utad.tfg.perfil_usuario"
+        android:label="fragment_perfil_usuario"
+        tools:layout="@layout/fragment_perfil_usuario" />
+    <fragment
+        android:id="@+id/mis_pedidos"
+        android:name="com.utad.tfg.mis_pedidos"
+        android:label="fragment_mis_pedidos"
+        tools:layout="@layout/fragment_mis_pedidos" />
+    <fragment
+        android:id="@+id/mis_reservas"
+        android:name="com.utad.tfg.mis_reservas"
+        android:label="fragment_mis_reservas"
+        tools:layout="@layout/fragment_mis_reservas" />
+    <fragment
+        android:id="@+id/restaurante"
+        android:name="com.utad.tfg.Restaurante"
+        android:label="fragment_restaurante"
+        tools:layout="@layout/fragment_restaurante" >
+        <action
+            android:id="@+id/action_restaurante_to_carta_Restaurante"
+            app:destination="@id/carta_Restaurante" />
+        <action
+            android:id="@+id/action_restaurante_to_hacerReservaRestaurante"
+            app:destination="@id/hacerReservaRestaurante" />
+    </fragment>
+    <fragment
+        android:id="@+id/tienda"
+        android:name="com.utad.tfg.Tienda"
+        android:label="fragment_tienda"
+        tools:layout="@layout/fragment_tienda" >
+        <action
+            android:id="@+id/action_tienda_to_tallaProducto"
+            app:destination="@id/tallaProducto">
+        </action>
+        <action
+            android:id="@+id/action_tienda_to_tiposPedido"
+            app:destination="@id/tiposPedido" />
+        <action
+            android:id="@+id/action_tienda_to_tallaZapatillas"
+            app:destination="@id/tallaZapatillas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/peluqueria"
+        android:name="com.utad.tfg.Peluqueria"
+        android:label="fragment_peluqueria"
+        tools:layout="@layout/fragment_peluqueria" >
+        <action
+            android:id="@+id/action_peluqueria_to_tiposReserva"
+            app:destination="@id/tiposReserva" />
+        <action
+            android:id="@+id/action_peluqueria_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/carta_Restaurante"
+        android:name="com.utad.tfg.Carta_Restaurante"
+        android:label="fragment_carta__restaurante"
+        tools:layout="@layout/fragment_carta__restaurante" >
+        <action
+            android:id="@+id/action_carta_Restaurante_to_hacerPedidoRestaurante"
+            app:destination="@id/hacerPedidoRestaurante" />
+    </fragment>
+    <fragment
+        android:id="@+id/hacerPedidoRestaurante"
+        android:name="com.utad.tfg.HacerPedidoRestaurante"
+        android:label="fragment_hacer_pedido_restaurante"
+        tools:layout="@layout/fragment_hacer_pedido_restaurante" >
+        <action
+            android:id="@+id/action_hacerPedidoRestaurante_to_tiposPedido"
+            app:destination="@id/tiposPedido" />
+        <action
+            android:id="@+id/action_hacerPedidoRestaurante_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/hacerReservaRestaurante"
+        android:name="com.utad.tfg.HacerReservaRestaurante"
+        android:label="fragment_hacer_reserva_restaurante"
+        tools:layout="@layout/fragment_hacer_reserva_restaurante" >
+        <action
+            android:id="@+id/action_hacerReservaRestaurante_to_tiposReserva"
+            app:destination="@id/tiposReserva" />
+        <action
+            android:id="@+id/action_hacerReservaRestaurante_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/ver_pedidos"
+        android:name="com.utad.tfg.ver_pedidos"
+        android:label="fragment_ver_pedidos"
+        tools:layout="@layout/fragment_ver_pedidos" >
+        <action
+            android:id="@+id/action_ver_pedidos_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/ver_reservas"
+        android:name="com.utad.tfg.ver_reservas"
+        android:label="fragment_ver_reservas"
+        tools:layout="@layout/fragment_ver_reservas" />
+    <fragment
+        android:id="@+id/ver_pedidos_tienda"
+        android:name="com.utad.tfg.ver_pedidos_tienda"
+        android:label="fragment_ver_pedidos_tienda"
+        tools:layout="@layout/fragment_ver_pedidos_tienda" >
+        <action
+            android:id="@+id/action_ver_pedidos_tienda_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/tiposPedido"
+        android:name="com.utad.tfg.TiposPedido"
+        android:label="fragment_tipos_pedido"
+        tools:layout="@layout/fragment_tipos_pedido" >
+        <action
+            android:id="@+id/action_tiposPedido_to_ver_pedidos"
+            app:destination="@id/ver_pedidos" />
+        <action
+            android:id="@+id/action_tiposPedido_to_ver_pedidos_tienda"
+            app:destination="@id/ver_pedidos_tienda" />
+    </fragment>
+    <fragment
+        android:id="@+id/tiposReserva"
+        android:name="com.utad.tfg.TiposReserva"
+        android:label="fragment_tipos_reserva"
+        tools:layout="@layout/fragment_tipos_reserva" >
+        <action
+            android:id="@+id/action_tiposReserva_to_ver_reservas"
+            app:destination="@id/ver_reservas" />
+        <action
+            android:id="@+id/action_tiposReserva_to_ver_reservas_tienda"
+            app:destination="@id/ver_reservas_tienda" />
+    </fragment>
+    <fragment
+        android:id="@+id/ver_reservas_tienda"
+        android:name="com.utad.tfg.ver_reservas_tienda"
+        android:label="fragment_ver_reservas_tienda"
+        tools:layout="@layout/fragment_ver_reservas_tienda" />
+    <fragment
+        android:id="@+id/tallaProducto"
+        android:name="com.utad.tfg.TallaProducto"
+        android:label="fragment_talla_producto"
+        tools:layout="@layout/fragment_talla_producto" >
+        <action
+            android:id="@+id/action_tallaProducto_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/tallaZapatillas"
+        android:name="com.utad.tfg.TallaZapatillas"
+        android:label="fragment_talla_zapatillas"
+        tools:layout="@layout/fragment_talla_zapatillas" >
+        <action
+            android:id="@+id/action_tallaZapatillas_to_establecimientos"
+            app:destination="@id/establecimientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminPanelFragment"
+        android:name="com.utad.tfg.AdminPanelFragment"
+        android:label="AdminPanelFragment" >
+        <action
+            android:id="@+id/action_adminPanelFragment_to_adminRestaurante"
+            app:destination="@id/adminRestaurante" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_admin_Tienda"
+            app:destination="@id/admin_Tienda" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminRestaurante"
+        android:name="com.utad.tfg.AdminRestaurante"
+        android:label="fragment_admin_restaurante"
+        tools:layout="@layout/fragment_admin_restaurante" >
+        <action
+            android:id="@+id/action_adminRestaurante_to_admin_Carta1"
+            app:destination="@id/admin_Carta1" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_Carta1"
+        android:name="com.utad.tfg.admin_Carta1"
+        android:label="fragment_admin__carta1"
+        tools:layout="@layout/fragment_admin__carta1" />
+    <fragment
+        android:id="@+id/admin_Tienda"
+        android:name="com.utad.tfg.admin_Tienda"
+        android:label="fragment_admin__tienda"
+        tools:layout="@layout/fragment_admin__tienda" >
+        <action
+            android:id="@+id/action_admin_Tienda_to_admin_Tienda1"
+            app:destination="@id/admin_Tienda1" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_Tienda1"
+        android:name="com.utad.tfg.admin_Tienda1"
+        android:label="fragment_admin__tienda1"
+        tools:layout="@layout/fragment_admin__tienda1" />
+</navigation>

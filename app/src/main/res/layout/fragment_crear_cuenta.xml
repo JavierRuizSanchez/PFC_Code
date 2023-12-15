@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CrearCuenta">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Cuenta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextConfirmEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmación Email"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextConfirmacionContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmación Contraseña"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono Opcional"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCrearPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Cuenta"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:textColor="#3333FF"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/txtErrorCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

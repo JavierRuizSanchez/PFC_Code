@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ver_pedidos">
+
+    <Button
+        android:id="@+id/btnMenuPedRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="end|top"/>
+
+    <TextView
+        android:id="@+id/txtEstablecimientosPed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="112dp"
+        android:text="SU NUMERO DE PEDIDO ES: 1"
+        android:layout_marginTop="400dp"
+        android:textStyle="bold"/>
+
+    <!-- Layout para mostrar la lista de pedidos con un RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPedidos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Botón para eliminar -->
+    <TextView
+        android:id="@+id/textAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El pago se deberá realizar en el restaurante durante su recogida"
+        android:layout_marginTop="200dp"
+        android:textSize="13dp"
+        android:layout_gravity="center"
+        style="@style/AvisoText"/>
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/btn_eliminarPedRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar todos los productos"
+        android:textColor="@color/red"
+        android:layout_gravity="bottom|center_horizontal"
+        app:cornerRadius="10dp"
+        android:layout_marginBottom="50dp"
+        app:strokeColor="@color/red" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/btn_eliminarPedidoSeleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        app:strokeColor="@color/red"
+        android:text="Eliminar producto Seleccionado"
+        android:layout_gravity="bottom|center_horizontal"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="16dp"/>
+
+</FrameLayout>

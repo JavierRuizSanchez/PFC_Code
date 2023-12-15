@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Carta_Restaurante">
+
+    <!-- Encabezado u otros elementos que desees agregar -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/MisPedidosTiendaIrPed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Columna Izquierda -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- Producto 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/tienda_prod1"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#EEEEEE"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/conjuntochandal" />
+
+                    <TextView
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/conjuntochandal_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Conjunto de chandal 15€"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/conjuntochandal_detalles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Conjunto de chandal negro"/>
+
+                    <ImageButton
+                        android:id="@+id/tienda_prod2"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="70dp"
+                        android:backgroundTint="#EEEEEE"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/zapatillas" />
+
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/zapatillas_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zapatillas Nike 70€"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_marginLeft="35dp"
+                        android:id="@+id/zapatillas_detalles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zapatillas Nike blancas"/>
+
+                    <ImageButton
+                        android:id="@+id/tienda_prod3"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="35dp"
+                        android:backgroundTint="#EEEEEE"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/vestidonegro" />
+
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/vestidonegro_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vestido negro 25€"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_marginLeft="35dp"
+                        android:id="@+id/vestidonegro_detalles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vestido negro mujer"/>
+
+                    <ImageButton
+                        android:id="@+id/tienda_prod4"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:backgroundTint="#EEEEEE"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/polodehombremangalargarayas" />
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/polodehombremangalargarayas_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polo de hombre manga larga rayas 29€"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/polodehombremangalargarayas_detalles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polo hombre manga larga rayas verdes"/>
+
+                    <ImageButton
+                        android:id="@+id/tienda_prod5"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="35dp"
+                        android:backgroundTint="#EEEEEE"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/poloemilio" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/poloemilio_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emidio Tucci Polo de hombre manga larga 50€"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/poloemilio_detalles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polo Emilio Tucci manga larga negro"/>
+                </LinearLayout>
+
+
+                <!-- Repite bloques similares para Producto 2 al 5 -->
+
+            </LinearLayout>
+
+            <!-- Columna Derecha -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/tienda_prod6"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#EEEEEE"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/polodustin" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/polodustin_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dustin-Polo manga larga pique garment DYED de hombre 30€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/polodustin_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Polo Dustin manga larga"/>
+
+                <ImageButton
+                    android:id="@+id/tienda_prod7"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="35dp"
+                    android:backgroundTint="#EEEEEE"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pulseralacoste" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/pulseralacoste_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lacoste-Pulsera Loch de piel azul 69€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/pulseralacoste_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulsera Lacoste azul de piel"/>
+
+                <ImageButton
+                    android:id="@+id/tienda_prod8"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#EEEEEE"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gabardina" />
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/gabardina_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lauren Ralph Lauren-Gabardina de mujer larga 70€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/gabardina_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gabardina larga para mujer"/>
+
+                <ImageButton
+                    android:id="@+id/tienda_prod9"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#EEEEEE"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pendientes" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/pendientes_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swarovski-Pendientes de Clip Constella bañado en oro 80€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/pendientes_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendientes Swaroski bañados en oro"/>
+
+                <ImageButton
+                    android:id="@+id/tienda_prod10"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#EEEEEE"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/camisamujer" />
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/camisamujer_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camisa mujer popelín 40€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/camisamujer_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camisa azul popelín para mujer"/>
+                <!-- Producto 6 al 10 (estructura similar a la columna izquierda) -->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/MisPedidosTiendaIrPed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Mis pedidos"
+        android:textSize="18sp"
+        android:textColor="#3333FF"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp" />
+</RelativeLayout>

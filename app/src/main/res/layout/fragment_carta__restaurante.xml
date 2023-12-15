@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Carta_Restaurante"
+    android:id="@+id/carta_Restaurante2">
+
+<!-- Encabezado u otros elementos que desees agregar -->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/ir_a_pedido">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Columna Izquierda -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Producto 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/producto1_cuatroquesos"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/cuatroformaggi" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/cuatroformaggi_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza 4 Formaggi 15€ "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="45dp"
+                    android:id="@+id/cuatroformaggi_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza 4 quesos"/>
+
+                <ImageView
+                    android:id="@+id/producto2_carbonara"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/carbonara" />
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/carbonara_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Espaguetis Carbonara 17€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/carbonara_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasta carbonara(bacon y salsa carbonara) "/>
+
+                <ImageView
+                    android:id="@+id/producto3_prosciutto"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/prosciutto" />
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/prosciutto_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza Proscuitto 11€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/prosciutto_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza jamón y queso mozzarella "/>
+
+                <ImageView
+                    android:id="@+id/producto4_cuatroestaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/cuatroestaciones" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/cuatroestaciones_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza 4 Stagioni 13€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/cuatroestaciones_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza 4 estaciones(tomate,queso,aceitunas negras y champiñones)"/>
+
+                <ImageView
+                    android:id="@+id/producto5_bolonesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/bolonesa" />
+
+                <TextView
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/bolonesa_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasta Bolognese 15€"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/bolonesa_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pasta Boloñesa(carne picada y tomate)"/>
+            </LinearLayout>
+
+
+            <!-- Repite bloques similares para Producto 2 al 5 -->
+
+        </LinearLayout>
+
+        <!-- Columna Derecha -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/producto6_pesto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pesto" />
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:id="@+id/pesto_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasta Pesto 15€"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/pesto_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasta con salsa pesto"/>
+
+            <ImageView
+                android:id="@+id/producto7_pane"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pane" />
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/pane_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pane de La Tagliatella 6€"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/pane_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pan de la casa(Aceitunas,tomate y cebolla)"/>
+
+            <ImageView
+                android:id="@+id/producto8_ragu"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ragu" />
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:id="@+id/ragu_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasta Ragu Antico 15€"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:id="@+id/ragu_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasta con queso straticella y albahaca"/>
+
+            <ImageView
+                android:id="@+id/producto9_tiramisu"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/tiramisu" />
+
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:id="@+id/tiramisu_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiramisu 7€"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:id="@+id/tiramisu_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postre tiramisu"/>
+
+            <ImageView
+                android:id="@+id/producto10_coppagusto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/coppagusto" />
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:id="@+id/coppagusto_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copa al gusto 10€"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/coppagusto_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copa de helado a elegir"/>
+            <!-- Producto 6 al 10 (estructura similar a la columna izquierda) -->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <Button
+        android:id="@+id/ir_a_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Hacer pedido"
+        android:textSize="18sp"
+        android:textColor="#3333FF"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp" />
+</RelativeLayout>
